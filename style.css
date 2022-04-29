@@ -277,6 +277,7 @@ a:hover {
     margin-left: 0;
 }
 
+
 .row.row-no-gutters > [class^="col-"],
 .row.row-no-gutters > [class*=" col-"] {
     padding-right: 0;
@@ -705,6 +706,9 @@ p {
     margin: auto auto auto auto;
 }
 
+
+
+
 h2 {
     font-size: 22px;
     line-height: 1.4em;
@@ -781,12 +785,15 @@ h4 {
 
 .tc-white {
     color: #F3976C!important;
+    
    
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
+    /*background: #F3976C;*/
+    background:#F2b79c;
     /*color: #FFFFFF!important;*/
+   
     color:black;
     
 }
