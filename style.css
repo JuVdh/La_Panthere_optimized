@@ -13,21 +13,22 @@ button {
     outline: none!important;
 }
 
-a:hover {
+a:hover{
     cursor: pointer;
     text-decoration: none;
     /*text-decoration:underline!important;*/
        
 }
 
-#page-loading-blocs-notifaction {
+/*code mort loading spinner manquant*/
+/*#page-loading-blocs-notifaction {
     position: fixed;
     top: 0;
     bottom: 0;
     width: 100%;
     z-index: 100000;
     background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
-}
+}*/
 
 .bloc {
     width: 100%;
@@ -290,7 +291,6 @@ a:hover {
 }
 
 #bloc-1-hero h1 {
-    /*font-size: 32px;*/
     font-size: 36px;
 }
 
@@ -353,6 +353,10 @@ a:hover {
 
 .navbar-toggle:hover {
     background: transparent!important;
+}
+
+.navbar-toggle:focus{
+    background-color: #F3976C;
 }
 
 .navbar-toggle .icon-bar {
@@ -466,9 +470,11 @@ nav .caret {
 
 .btn-d,
 .btn-d:hover,
-.btn-d:focus {
+.btn-d:focus
+{
     color: #FFF;
     background: rgba(0, 0, 0, .3);
+   
 }
 
 button {
@@ -525,21 +531,48 @@ button {
 .scrollToTop {
     width: 40px;
     height: 40px;
-    position: fixed;
+    position:fixed;
     bottom: 20px;
     right: 20px;
-    opacity: 0;
+   /*opacity:0;*/
+   visibility: hidden;
     z-index: 500;
     transition: all .3s ease-in-out;
 }
 
 .scrollToTop span {
     margin-top: 6px;
+    color:#364577;
 }
+
+
 
 .showScrollTop {
     font-size: 14px;
-    opacity: 1;
+    visibility: visible;
+    
+    /*opacity:1;*/
+   
+}
+
+.scrollToTop:hover,
+.scrollToTop:focus,
+.scrollToTop:active{
+    background-color: #364577;
+    box-shadow: 0px 4px 15px 8px white;
+    
+}
+
+.scrollToTop:hover span{
+    color:white;
+}
+
+.scrollToTop:focus span{
+    color:white;
+}
+
+.scrollToTop:active span{
+    color:white;
 }
 
 a[data-lightbox] {
@@ -722,11 +755,6 @@ a {
 p {
     /*font-size: 13px;*/
     font-size:18px;
-    /*font-size:20px;
-    max-width:370px;
-    margin: auto;
-    margin-bottom:20px;*/
-    
 }
 
 
@@ -737,20 +765,14 @@ p {
 
 .h1 {
     font-size: 20px;
-  
     font-family: "Open Sans";
 }
 
 .cta-hero {
     margin-top: 22px;
-    /*color: #FFFFFF!important;*/
-    
     text-transform: uppercase;
     padding: 12px 28px 12px 28px;
-    /*font-size: 16px;*/
     font-size: 24px;
-    
-    /*font-weight: 700;*/
 }
 
 .social {
@@ -857,25 +879,14 @@ margin:auto;
 }
 
 .btn-atomic-tangerine {
-    /*background: #F3976C;*/
-    
-    /*color: #FFFFFF!important;*/
-
     background:white;
     box-shadow: 0px 4px 15px 1px #F2b79c;
-    
-    
-   
-    
 }
 
 .btn-atomic-tangerine:hover, .btn-atomic-tangerine:focus {
-    /*background: #c27956!important;*/
     background:#F3976C;
     color: #FFFFFF!important;
-
     box-shadow: 0px 4px 15px 8px #F2b79c;
-    
 }
 
 .ltc-white {
@@ -945,7 +956,7 @@ margin:auto;
     }
 }
 
-/*@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {*/
+/* only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {*/
     @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
